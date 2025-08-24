@@ -1,0 +1,47 @@
+.about {
+  padding: 6rem 2rem;
+  background-color: var(--background-color);
+  color: var(--text-color-secondary);
+  transition: background-color 0.3s ease;
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profileCardWrapper {
+  flex-basis: 35%;
+}
+
+.aboutMeText {
+  flex-basis: 65%;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.8;
+  color: var(--text-color-secondary);
+}
+
+.heading {
+  font-family: 'Inter', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-color-primary);
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .aboutContainer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .profileCardWrapper,
+  .aboutMeText {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,77 @@
+.hero {
+  min-height: 100vh;
+  margin-top: calc(-1 * var(--navbar-height)); /* This is the fix to pull the hero section up */
+  padding-top: var(--navbar-height); /* This adds space for content, so it doesn't get covered */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--hero-bg);
+  position: relative;
+  overflow: hidden;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  z-index: 2; /* Ensures text is on top of the rays */
+  position: relative;
+}
+
+.heroTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  background: linear-gradient(
+    45deg,
+    var(--text-color-primary),
+    var(--accent-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.heroSubtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  color: var(--text-color-secondary);
+  animation: slideIn 2s ease-in-out;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Styles for the LightRays container */
+.hero :global(.custom-rays) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
