@@ -11,21 +11,27 @@
   --border-color: #dee2e6;
   --footer-bg: #343a40;
   --footer-text: #fff;
+  --card-bg-light: #f5f8fc;
+  --tech-bg: #e9ecef;
+  --tech-text: #495057;
 }
 
 /* Dark theme overrides */
 body.dark-mode {
-  --background-color: #1a1a2e;
-  --text-color-primary: #e6e6e6;
-  --text-color-secondary: #b0b0b0;
-  --card-bg: #22223b;
+  --background-color: #1a1a2e; /* Deep purple/blue */
+  --text-color-primary: #e6e6e6; /* Lighter text for main headings */
+  --text-color-secondary: #c0c0d0; /* Better contrast for body text */
+  --card-bg: #22223b; /* Darker card background */
   --card-shadow: rgba(0, 0, 0, 0.3);
-  --accent-color: #892cdc;
+  --accent-color: #892cdc; /* Vibrant purple accent */
   --header-bg: rgba(34, 34, 59, 0.9);
   --border-color: #4a4e69;
   --footer-bg: #161625;
   --footer-text: #b0b0b0;
-}
+  --card-bg-light: #2c2c4d; /* Slightly lighter card background */
+  --tech-bg: #4a4e69; /* Tech tag background */
+  --tech-text: #e6e6e6; /* Tech tag text color */
+}}
 
 body {
   margin: 0;

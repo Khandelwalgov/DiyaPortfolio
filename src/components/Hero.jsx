@@ -6,7 +6,7 @@ const Hero = ({ theme }) => {
   return (
     <section id="hero" className={styles.hero}>
       <div className={styles.heroContent}>
-        <h1 className={styles.heroTitle}>Diya Mamoria</h1>
+        <h1 className={styles.heroTitle}>Hello, I'm Diya Mamoria</h1>
         <p className={styles.heroSubtitle}>
           I'm a final-year B.Tech CSE student specializing in Full Stack Web Development.
         </p>

@@ -1,0 +1,110 @@
+.card {
+  /* Using a gradient for the background */
+  background: linear-gradient(145deg, var(--card-bg), var(--card-bg-light));
+  border-radius: 12px;
+  box-shadow: 0 4px 20px var(--card-shadow);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  text-align: left;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  /* Creating a stronger glow effect on hover */
+  box-shadow: 0 6px 30px var(--card-shadow), 0 0 15px 5px var(--accent-color);
+}
+
+.jobTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-color-primary);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.company {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--accent-color);
+  margin: 0;
+}
+
+.duration {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  color: var(--text-color-secondary);
+  opacity: 0.8;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.description {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+  color: var(--text-color-secondary);
+}
+
+.listSection {
+  margin-top: 1.5rem;
+}
+
+.listHeading {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin-bottom: 0.75rem;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+.achievementList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.achievementList li {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: var(--text-color-secondary);
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.achievementList li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.techList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.techTag {
+  background-color: var(--tech-bg); /* Use a new variable for tech tag background */
+  color: var(--tech-text); /* Use a new variable for tech tag text */
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.techTag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

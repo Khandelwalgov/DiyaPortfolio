@@ -1,0 +1,70 @@
+/* Experiences Section */
+.experiences {
+  padding: 6rem 2rem;
+  background-color: var(--background-color);
+  color: var(--text-color-secondary);
+  transition: background-color 0.3s ease;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading {
+  font-family: 'Inter', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-color-primary);
+  margin-bottom: 2rem;
+}
+
+/* Timeline Layout */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  /* Removed padding-left: 20px; */
+  text-align: left;
+}
+
+/* Removed the ::before pseudo-element that created the vertical line */
+.timeline::before {
+  /* No code here */
+}
+
+.timelineItem {
+  position: relative;
+}
+
+/* Removed the ::before pseudo-element that created the dots */
+.timelineItem::before {
+  /* No code here */
+}
+
+.timelineContent {
+  /* Removed margin-left: 20px; */
+}
+
+
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .timeline::before {
+    display: none;
+  }
+
+  .timelineItem::before {
+    display: none;
+  }
+
+  .timelineContent {
+    margin-left: 0;
+  }
+}
